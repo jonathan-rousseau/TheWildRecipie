@@ -1,9 +1,9 @@
-import RemoveMe from './components/RemoveMe';
+import GlobalRouter from './components/common/GlobalRouter';
 
 function App() {
   return (
     <div className="App">
-      <RemoveMe />
+      <GlobalRouter />
     </div>
   );
 }
