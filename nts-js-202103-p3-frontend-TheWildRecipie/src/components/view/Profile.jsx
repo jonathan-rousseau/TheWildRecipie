@@ -1,14 +1,17 @@
 import React from 'react';
+import './Profile.css';
 
 function Profile() {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate
-        modi ex accusamus quibusdam architecto molestiae praesentium omnis
-        molestias suscipit mollitia nesciunt ut quia maxime atque fugit, aliquam
-        laboriosam reprehenderit.
-      </p>
+    <div className="box-profil">
+      <h1 className="Profile">Mon Profil</h1>
+      <h3 className="elementProfil">
+        Mon pseudo: <span>WCS_RECIPIE</span>
+      </h3>
+      <h3 className="elementProfil">
+        Mon adresse email: <span>test@gmail.com</span>
+      </h3>
+      <h3 className="elementProfil">Mon mot de passe:</h3>
     </div>
   );
 }

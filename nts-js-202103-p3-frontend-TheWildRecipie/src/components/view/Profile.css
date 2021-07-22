@@ -1,0 +1,13 @@
+.Profile {
+  text-align: center;
+}
+
+.elementProfil {
+  text-align: center;
+}
+
+.box-profil {
+  background-color: rgba(122, 122, 122, 0.5);
+  border-radius: 10px;
+  width: 50%;
+}

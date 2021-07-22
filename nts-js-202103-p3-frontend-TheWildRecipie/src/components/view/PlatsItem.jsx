@@ -5,9 +5,11 @@ function PlatsItem(props) {
   const { name, description } = props;
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <p>{description}</p>
+    <div className="background">
+      <div className="box-item">
+        <h1>{name}</h1>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }

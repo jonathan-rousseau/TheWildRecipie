@@ -1,0 +1,26 @@
+.box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: 1px 3px 3px 2px rgba(235, 125, 0, 0.5);
+}
+.box-item:hover {
+  transform: scale(1.2);
+}
+li {
+  list-style-type: none;
+}
+.background {
+  background-color: khaki;
+  padding-bottom: 20px;
+}

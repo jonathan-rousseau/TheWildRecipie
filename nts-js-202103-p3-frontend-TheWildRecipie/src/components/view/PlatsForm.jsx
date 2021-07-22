@@ -1,6 +1,7 @@
 /* eslint-disable no-alert */
 import axios from 'axios';
 import React, { useState } from 'react';
+import './PlatsItem.css';
 
 import FormInput from '../common/FormInput';
 
@@ -16,7 +17,7 @@ function PlatsForm() {
     event.preventDefault();
 
     axios
-      .post(`${process.env.REACT_APP_BACKEND_URL}/plat`, plat)
+      .post('http://localhost:8080/plat', plat)
       .then((response) => {
         alert(response.data);
       })
