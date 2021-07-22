@@ -7,7 +7,7 @@ import Footer from './Footer';
 import PlatsList from '../view/PlatsList';
 import PlatsForm from '../view/PlatsForm';
 import PlatsItem from '../view/PlatsItem';
-// import DessertForm from '../view/DessertForm';
+import DessertForm from '../view/DessertForm';
 import DessertList from '../view/DessertList';
 import DessertItem from '../view/DessertItem';
 import Profile from '../view/Profile';
@@ -34,12 +34,12 @@ function GlobalRouter() {
             <Route exact path="/platsItem">
               <PlatsItem />
             </Route>
-            <Route exact path="/platForm">
+            <Route exact path="/platsForm">
               <PlatsForm />
             </Route>
-            {/* <Route exact path="./dessertForm">
+            <Route exact path="/dessertForm">
               <DessertForm />
-            </Route> */}
+            </Route>
             <Route exact path="/desserts">
               <DessertList />
             </Route>

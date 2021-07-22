@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import PlatsItem from './PlatsItem';
 import './PlatsList.css';
@@ -21,8 +22,17 @@ function PlatsList() {
   return (
     <div className="background">
       <h1 className="plat"> Toutes les recettes de plats </h1>
-      <h2>Rechercher un plat</h2>
-      <Research search={search} setSearch={setSearch} />
+      <div className="container">
+        <div className="souscontainer">
+          <h2>Rechercher un plat</h2>
+          <Research search={search} setSearch={setSearch} />
+        </div>
+        <Link to="/platsForm">
+          <button type="button" className="bouton-creation">
+            Créer une nouvelle recette
+          </button>
+        </Link>
+      </div>
 
       {plats
 

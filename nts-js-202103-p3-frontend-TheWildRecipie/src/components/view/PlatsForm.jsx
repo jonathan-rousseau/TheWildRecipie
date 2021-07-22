@@ -28,7 +28,7 @@ function PlatsForm() {
   return (
     <div>
       <form className="platGlobal" onSubmit={handleSubmit}>
-        <h1 className="addPlat">Ajouter une recette </h1>
+        <h1 className="addPlat">Ajouter une recette de plat</h1>
         <FormInput
           classInput
           label="name"

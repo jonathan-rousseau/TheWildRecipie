@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import DessertItem from './DessertItem';
 import './DessertList.css';
@@ -21,9 +22,17 @@ function DessertList() {
   return (
     <div className="background">
       <h1 className="dessert"> Toutes les recettes de désserts </h1>
-      <h2>Rechercher un déssert</h2>
-      <Research search={search} setSearch={setSearch} />
-
+      <div className="container">
+        <div className="souscontainer">
+          <h2>Rechercher un déssert</h2>
+          <Research search={search} setSearch={setSearch} />
+        </div>
+        <Link to="/dessertForm">
+          <button type="button" className="bouton-creation">
+            Créer une nouvelle recette
+          </button>
+        </Link>
+      </div>
       {desserts
 
         .filter(
