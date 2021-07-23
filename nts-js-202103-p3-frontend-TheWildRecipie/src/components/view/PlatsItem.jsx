@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './PlatsItem.css';
 
 function PlatsItem(props) {
   const { name, description } = props;

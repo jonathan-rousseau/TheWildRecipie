@@ -14,22 +14,34 @@ function Navbar() {
           <div className="navbar_logo" />
           <ul className="navbar_links">
             <li className="navbar__item">
-              <Link to="/" className="navbar_link">
+              <Link to="/" className="navbar_link" onClick={handleShowLinks}>
                 ACCUEIL
               </Link>
             </li>
             <li className="navbar__item">
-              <Link to="/plats" className="navbar_link">
+              <Link
+                to="/plats"
+                className="navbar_link"
+                onClick={handleShowLinks}
+              >
                 PLATS
               </Link>
             </li>
             <li className="navbar__item">
-              <Link to="/desserts" className="navbar_link">
+              <Link
+                to="/desserts"
+                className="navbar_link"
+                onClick={handleShowLinks}
+              >
                 DESSERTS
               </Link>
             </li>
             <li className="navbar__item">
-              <Link to="/profile" className="navbar_link">
+              <Link
+                to="/profile"
+                className="navbar_link"
+                onClick={handleShowLinks}
+              >
                 Mon Compte
               </Link>
             </li>

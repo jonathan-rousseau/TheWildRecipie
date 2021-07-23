@@ -5,3 +5,9 @@
   font-size: 64px;
   text-shadow: rgba(235, 125, 0) 2px 2px 2px;
 }
+
+@media screen and (max-width: 767px) {
+  .titleHeader {
+    font-size: 3em;
+  }
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 .networkLink {
   display: flex;
   justify-content: center;
@@ -7,8 +9,10 @@
   margin-left: 4vw;
 }
 
-.titleKine {
-  margin-right: 10vw;
+.title {
+  font-family: 'Kaushan Script';
+  text-shadow: rgba(235, 125, 0) 2px 2px 2px;
+  padding-right: 15px;
 }
 
 .networkLogo {

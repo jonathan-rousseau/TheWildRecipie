@@ -1,13 +1,8 @@
-.all {
-  margin-top: 40px;
-}
-
 .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding: 1rem;
   background-color: khaki;
   color: dimgray;
@@ -40,8 +35,7 @@
   .navbar_burger {
     margin-right: 25px;
   }
-  .navbar {
-  }
+
   .navbar_links {
     flex-direction: column;
     justify-content: center;
@@ -53,7 +47,7 @@
     height: 100vh;
     padding: 2rem;
     visibility: hidden;
-    background-color: rgb(236, 255, 224);
+    background-color: rgba(235, 125, 0, 1);
     transition: all 0.8s ease-out;
   }
   .show-nav .navbar_links {
@@ -78,6 +72,7 @@
     display: block;
     padding: 1.5rem;
     font-size: 5vw;
+    color: black;
   }
 
   .navbar_burger:hover {
@@ -91,7 +86,7 @@
     height: 3px;
     position: relative;
     border-radius: 3px;
-    background: rgb(226, 138, 37);
+    background: black;
     transition: all.5s ease-in-out;
   }
   .burger-bar::before,

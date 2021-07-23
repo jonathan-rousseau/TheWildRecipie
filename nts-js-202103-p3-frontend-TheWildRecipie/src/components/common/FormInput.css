@@ -1,0 +1,19 @@
+.label {
+  position: relative;
+  top: 12px;
+  background-color: white;
+  color: rgba(235, 125, 0);
+  padding-top: 50px;
+}
+.input {
+  border: 1px solid rgba(235, 125, 0);
+  box-shadow: rgba(235, 125, 0) 1px 1px 1px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 85%;
+  display: flex;
+  margin: 1%;
+  font-size: 16px;
+  margin-left: 8%;
+}

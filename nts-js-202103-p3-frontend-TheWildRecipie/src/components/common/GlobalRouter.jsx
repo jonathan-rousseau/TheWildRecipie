@@ -12,12 +12,13 @@ import DessertList from '../view/DessertList';
 import DessertItem from '../view/DessertItem';
 import Profile from '../view/Profile';
 import SignUp from '../view/SignUp';
+
 // import SignIn from '../view/SignIn';
 
 function GlobalRouter() {
   return (
     <div>
-      <Router>
+      <Router className="tout">
         <Header />
         <Navbar />
         <div>

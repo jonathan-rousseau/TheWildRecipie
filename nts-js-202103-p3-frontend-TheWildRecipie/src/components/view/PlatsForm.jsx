@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 import axios from 'axios';
 import React, { useState } from 'react';
-import './PlatsItem.css';
+import './PlatsForm.css';
 
 import FormInput from '../common/FormInput';
 
@@ -31,8 +31,8 @@ function PlatsForm() {
         <h1 className="addPlat">Ajouter une recette de plat</h1>
         <FormInput
           classInput
-          label="name"
-          name="name"
+          label="Nom de la recette"
+          name="Name"
           value={plat}
           setValue={setPlat}
         />

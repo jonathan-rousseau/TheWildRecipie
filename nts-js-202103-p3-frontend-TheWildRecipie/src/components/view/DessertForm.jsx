@@ -30,7 +30,7 @@ function DessertForm() {
         <h1 className="addPlat">Ajouter une recette de déssert </h1>
         <FormInput
           classInput
-          label="name"
+          label="Nom de la recette"
           name="name"
           value={dessert}
           setValue={setDessert}
@@ -40,6 +40,7 @@ function DessertForm() {
           <textarea
             className="textArea"
             maxLength="1200"
+            type="text"
             rows="10"
             id="Description"
             onChange={(e) =>
