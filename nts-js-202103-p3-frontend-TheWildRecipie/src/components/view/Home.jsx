@@ -1,10 +1,11 @@
 import React from 'react';
-import Carousel from '../common/Carousel';
+import Slider from '../common/Slider';
 import './Home.css';
 
 function Home() {
   return (
     <div className="about">
+      <Slider />
       <h1 className="titre">Qui sommes nous ?</h1>
       <div className="container">
         <p className="texte">
@@ -30,7 +31,6 @@ function Home() {
           alt="imageCuisine"
         />
       </div>
-      <Carousel />
     </div>
   );
 }

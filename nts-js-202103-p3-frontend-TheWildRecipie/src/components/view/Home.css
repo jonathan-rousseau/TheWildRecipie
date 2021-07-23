@@ -1,6 +1,5 @@
 .about {
   background-color: khaki;
-  width: 100%;
 }
 .container {
   display: flex;
@@ -26,6 +25,7 @@
   font-size: 3em;
   margin-left: 5%;
   padding-top: 2%;
+  margin-top: 0;
   text-shadow: white 2px 2px 2px;
 }
 

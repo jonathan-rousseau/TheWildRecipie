@@ -49,6 +49,7 @@
     visibility: hidden;
     background-color: rgba(235, 125, 0, 1);
     transition: all 0.8s ease-out;
+    z-index: 1000;
   }
   .show-nav .navbar_links {
     width: 100vw;
@@ -88,6 +89,7 @@
     border-radius: 3px;
     background: black;
     transition: all.5s ease-in-out;
+    z-index: 2000;
   }
   .burger-bar::before,
   .burger-bar::after {
