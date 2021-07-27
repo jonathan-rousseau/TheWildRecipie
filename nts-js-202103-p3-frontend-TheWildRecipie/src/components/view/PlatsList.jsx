@@ -25,7 +25,9 @@ function PlatsList() {
       <div className="container">
         <div className="souscontainer">
           <h2>Rechercher un plat</h2>
-          <Research search={search} setSearch={setSearch} />
+          <div className="test">
+            <Research search={search} setSearch={setSearch} />
+          </div>
         </div>
         <Link to="/platsForm">
           <button type="button" className="bouton-creation">

@@ -2,14 +2,16 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import './PlatsForm.css';
+import Swal from 'sweetalert2';
 
 import FormInput from '../common/FormInput';
 
 function PlatsForm() {
+  const userId = localStorage.getItem('USERID');
   const [plat, setPlat] = useState({
     name: '',
     description: '',
-    user_id: 1,
+    user_id: userId,
     category_id: 1,
   });
 
@@ -19,10 +21,28 @@ function PlatsForm() {
     axios
       .post('http://localhost:8080/plat', plat)
       .then((response) => {
-        alert(response.data);
+        JSON.stringify(
+          response,
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Recette de plat ajoutée avec succès!',
+            showConfirmButton: false,
+            timer: 3000,
+          })
+        );
       })
 
-      .catch((error) => console.error(error));
+      .catch(
+        (error) => JSON.stringify(error),
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Il faut être connecté pour ajouter une nouvelle recette',
+          showConfirmButton: false,
+          timer: 3000,
+        })
+      );
   };
 
   return (
@@ -30,11 +50,11 @@ function PlatsForm() {
       <form className="platGlobal" onSubmit={handleSubmit}>
         <h1 className="addPlat">Ajouter une recette de plat</h1>
         <FormInput
-          classInput
           label="Nom de la recette"
-          name="Name"
+          name="name"
           value={plat}
           setValue={setPlat}
+          required
         />
         <label htmlFor="Description">
           <span className="textAreaLabel">Description:</span>

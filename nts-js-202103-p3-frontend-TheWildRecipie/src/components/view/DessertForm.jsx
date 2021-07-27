@@ -1,14 +1,16 @@
 /* eslint-disable no-alert */
 import axios from 'axios';
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 import FormInput from '../common/FormInput';
 
 function DessertForm() {
+  const userId = localStorage.getItem('USERID');
   const [dessert, setDessert] = useState({
     name: '',
     description: '',
-    user_id: 1,
+    user_id: userId,
     category_id: 2,
   });
 
@@ -18,10 +20,27 @@ function DessertForm() {
     axios
       .post('http://localhost:8080/plat', dessert)
       .then((response) => {
-        alert(response.data);
+        JSON.stringify(
+          response,
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Recette de déssert ajoutée avec succès!',
+            showConfirmButton: false,
+            timer: 3000,
+          })
+        );
       })
-
-      .catch((error) => console.error(error));
+      .catch(
+        (error) => JSON.stringify(error),
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Il faut être connecté pour ajouter une nouvelle recette',
+          showConfirmButton: false,
+          timer: 3000,
+        })
+      );
   };
 
   return (
@@ -29,7 +48,6 @@ function DessertForm() {
       <form className="platGlobal" onSubmit={handleSubmit}>
         <h1 className="addPlat">Ajouter une recette de déssert </h1>
         <FormInput
-          classInput
           label="Nom de la recette"
           name="name"
           value={dessert}

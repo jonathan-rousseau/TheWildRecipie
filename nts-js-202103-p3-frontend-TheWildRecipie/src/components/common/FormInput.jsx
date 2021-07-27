@@ -4,10 +4,7 @@ import './FormInput.css';
 // eslint-disable-next-line react/prop-types
 function FormInput({ label, name, type, value = {}, setValue }) {
   const handleChange = (event) => {
-    setValue({
-      ...value,
-      [name]: event.target.value,
-    });
+    setValue({ ...value, [name]: event.target.value });
   };
 
   return (

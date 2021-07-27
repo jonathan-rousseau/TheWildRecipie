@@ -13,22 +13,24 @@ function Slider() {
       title: 'Recette tarte aux fraises',
       subtitles: 'Recette Tarte aux fraises avec crème pâtissière.',
       img: fraise,
+      id: 1,
     },
     {
       title: 'Salade fraiche',
       subtitles: 'Une recette facile à faire et très rafraichissante',
       img: salade,
+      id: 2,
     },
     {
       title: 'la buche',
       subtitles: 'Recette de bûche roulée au chocolat facile et rapide !',
-
       img: buche,
+      id: 3,
     },
   ];
   return (
     <div className="carousel1">
-      <Carousel autoPlay infiniteLoop>
+      <Carousel className="positionImage" autoPlay infiniteLoop>
         {data.map((slide) => (
           <div key={slide.id}>
             <img src={slide.img} alt="" />

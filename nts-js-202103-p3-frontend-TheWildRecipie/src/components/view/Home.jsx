@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
   return (
     <div className="about">
-      <Slider />
+      <Slider className="carousel" />
       <h1 className="titre">Qui sommes nous ?</h1>
       <div className="container">
         <p className="texte">

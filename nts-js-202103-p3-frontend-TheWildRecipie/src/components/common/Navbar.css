@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: khaki;
   color: dimgray;
+  border-bottom: 3px solid white;
 }
 .navbar_links :hover {
   color: white;
@@ -32,8 +32,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navbar {
+    padding: 1rem;
+  }
   .navbar_burger {
     margin-right: 25px;
+    padding: 1rem;
   }
 
   .navbar_links {

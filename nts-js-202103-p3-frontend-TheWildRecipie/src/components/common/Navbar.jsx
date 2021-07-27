@@ -45,6 +45,15 @@ function Navbar() {
                 Mon Compte
               </Link>
             </li>
+            <li className="navbar__item">
+              <Link
+                to="/connexion"
+                className="navbar_link"
+                onClick={handleShowLinks}
+              >
+                Se connecter
+              </Link>
+            </li>
           </ul>
           <button
             className="navbar_burger"

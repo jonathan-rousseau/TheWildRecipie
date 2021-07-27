@@ -11,9 +11,9 @@ import DessertForm from '../view/DessertForm';
 import DessertList from '../view/DessertList';
 import DessertItem from '../view/DessertItem';
 import Profile from '../view/Profile';
-import SignUp from '../view/SignUp';
-
-// import SignIn from '../view/SignIn';
+import Login from '../view/Login';
+import SignUp from '../view/SignUp/SignUp';
+import Users from '../view/Users';
 
 function GlobalRouter() {
   return (
@@ -53,12 +53,15 @@ function GlobalRouter() {
             <Route exact path="/profil:id">
               <Profile />
             </Route>
+            <Route exact path="/connexion">
+              <Login />
+            </Route>
             <Route exact path="/inscription">
               <SignUp />
             </Route>
-            {/* <Route exact path="connexion">
-              <SignIn />
-            </Route> */}
+            <Route exact path="/users">
+              <Users />
+            </Route>
           </Switch>
         </div>
         <Footer />

@@ -43,4 +43,10 @@
     width: 100%;
     text-align: center;
   }
+  .carousel {
+    display: none;
+  }
+  .about {
+    margin-top: 5px;
+  }
 }
