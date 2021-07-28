@@ -6,6 +6,7 @@ function Users() {
 
   useEffect(() => {
     const token = localStorage.getItem('TOKEN');
+
     axios
       .get('http://localhost:8080/users/', {
         headers: {
